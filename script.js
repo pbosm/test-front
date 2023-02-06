@@ -40,6 +40,10 @@ left.addEventListener("click", function () {
         money.innerHTML = "R$ " + valor_atual + '00,00';
         output.innerHTML = valor_atual;
     }
+    
+    if (year.className == 'btn btn-month btn-light rounded-start p-2 active') {
+        trade.href = valor_atual;
+    }
 })
 
 right.addEventListener("click", function () {
@@ -70,6 +74,7 @@ month.addEventListener("click", function () {
     year.classList.remove("active");
     monthoryear.innerHTML = "Equivalente a mensalmente";
     money.innerHTML = "R$ " + valor_atual + '00,00';
+    trade.href = "index.html";
 })
 
 year.addEventListener("click", function () {
