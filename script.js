@@ -40,9 +40,10 @@ left.addEventListener("click", function () {
         money.innerHTML = "R$ " + valor_atual + '00,00';
         output.innerHTML = valor_atual;
     }
-    
+
     if (year.className == 'btn btn-month btn-light rounded-start p-2 active') {
         trade.href = valor_atual;
+        money.innerHTML = "R$ " + valor_atual * 12 + '00,00';
     }
 })
 
