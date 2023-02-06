@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Front-End - Teste</title>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <div class="title text-center">
+                    <h1 style="margin-bottom: auto;">Nossos Planos</h1>
+                </div>
+                <div class="col-8 second-text text-center mx-auto">
+                    Selecione o número de clientes que deseja gerenciar para ver nossos
+                    valores
+                </div>
+                <div class="three-text text-center mt-3 text-uppercase">
+                    selecione a quantidade de perfis
+                </div>
+                <div class="card-perfil mt-2">
+                    <div class="card-inside text-center">
+                        <div class="card-inside-text">
+                            <div class="row">
+                                <div class="col">
+                                    <i id="left" class="fas fa-sort-up"
+                                        style="transform: rotate(270deg); color: rgb(80, 80, 80); font-size: 65px; cursor: pointer;"></i>
+                                    <span id="number"
+                                        style="color: rgb(80, 80, 80); font-size: 70px; margin-left: 65px;margin-right: 65px;"></span>
+                                    <i id="right" class="fas fa-sort-up"
+                                        style="transform: rotate(90deg); color: rgb(80, 80, 80); font-size: 65px; cursor: pointer;"></i>
+                                </div>
+                            </div>
+                            <input type="range" min="1" max="10" value="0" class="slider" id="Range">
+                            <div class="title card-count text-center text-uppercase">
+                                cada perfil contempla
+                            </div>
+                            <div class="view-midia">
+                                <div class="row icon" style="justify-content: center;">
+                                    <div class="circulo px-2" id="circulo"
+                                        style="background-color: rgba(255, 0, 0, 0.555);">
+                                        <a href=""><i class="fab fa-youtube"
+                                                style="font-size:14px;color: white;"></i></a>
+                                    </div>
+                                    <div class="circulo px-2" id="circulo"
+                                        style="background-color: rgb(253, 165, 180);">
+                                        <a href=""><i class="fab fa-instagram"
+                                                style="font-size:14px;color: white;"></i></a>
+                                    </div>
+                                    <div class="circulo px-2" id="circulo" style="background-color: aqua">
+                                        <a href=""><i class="fab fa-twitter"
+                                                style="font-size:14px;color: white;"></i></a>
+                                    </div>
+                                    <div class="circulo px-2" id="circulo" style="background-color: #4f69a2">
+                                        <a href=""><i class="fab fa-facebook-square"
+                                                style="font-size:14px;color: white;"></i></a>
+                                    </div>
+                                    <div class="circulo px-2" id="circulo" style="background-color: rgb(63, 32, 134)">
+                                        <a href=""><i class="fab fa-blogger"
+                                                style="font-size:14px;color: white;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row icons mx-auto mt-4">
+                    <div class="title second-card text-center text-uppercase mb-2">
+                        selecione o período do seu pagamento
+                    </div>
+                    <div class="col text-center">
+                        <label id="month" class="btn btn-month btn btn-light rounded-end p-2">Mensal</label>
+                        <label id="year" class="btn btn-month btn btn-light rounded-start p-2">Anual</label>
+                    </div>
+                </div>
+                <div class="card-money mt-4">
+                    <div class="second-card-inside text-center">
+                        <div class="second-card-inside-text">
+                            <div class="row-12 title-row text-center rounded-top">
+                                <span style="font-size: 20px; color: white;">Plano Completo</span>
+                                <p id="month-year" style="font-size: 10px;color: #f763f7;">Equivalente a mensalidade</p>
+                            </div>
+                            <div class="money mt-2 mb-2">
+                                <span id="money" style="font-size: 25px; color: grey;">R$ 100,00</span>
+                            </div>
+                            <a id="trade" href=""><button id="btn-buy" type="button" class="btn btn-buy">Comprar agora                                
+                                <i class="fas fa-cart-plus" style="color: white;"></i>
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

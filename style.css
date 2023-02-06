@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+:root {
+    --color01: #408fce;
+    --color02: #1a2e5e;
+    --color03: #131313;
+    --color04: #ffffff;
+    --color05: #1e1e1e;
+    --color06: #e5e5e5;
+    --color07: #2DB744;
+    --color08: #DB2929;
+    --color09: #FFB839;
+}
+
+body {
+    margin: 0;
+    /* font-family: "Trebuchet MS"; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #ddeeff;
+}
+
+.card-inside {
+    background-color: white;
+    border-radius: 20px;
+    align-self: end;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.container.mt-5 {
+    max-width: 600px;
+}
+
+.second-text {
+    color: grey;
+    font-size: 17px;
+}
+
+.three-text {
+    font-weight: 650;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+}
+
+.second-card {
+    font-weight: 650;
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+}
+
+.card-count {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+}
+
+.midia {
+    background-color: white;
+}
+
+#circulo {
+    border-radius: 50%;
+    width: 40px;
+    height: 35px;
+    margin: 10px;
+}
+
+i {
+    margin-top: 10px;
+}
+
+.second-card-inside {
+    background-color: white;
+    border-radius: 20px;
+    align-self: end;
+    width: 100%;
+    height: 200px;
+    max-height: 185px;
+}
+
+.title-row {
+    height: 55px;
+    background: linear-gradient(to right, rgb(197 0 191), rgb(85 18 147));
+}
+
+.btn-buy {
+    width: 170px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(197 0 191), rgb(85 18 147));
+    color: #ffffff85;
+}
+
+i.fas.fa-cart-plus {
+    font-size: smaller;
+    margin-bottom: 7px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 7px;
+    background: rgb(197, 197, 197);
+    border-radius: 5px;
+    background-image: linear-gradient(#ff009d, #ff4500);
+    background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgb(197, 197, 197);
+    margin-left: 10px;
+}
+
+label.btn.btn-month {
+    width: 220px;
+    height: 65px;
+    margin-left: -10px;
+    font-size: 25px;
+    color: grey;
+    border-radius: 65px;
+}
+
+.btn.active {
+    color: white!important;
+    border-color: linear-gradient(to right, rgb(197 0 191), rgb(85 18 147));
+    background: linear-gradient(to right, rgb(197 0 191), rgb(85 18 147));
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff85;;
+}
+
+@media (max-width: 580px) {
+    #number {
+        display: contents;
+    }
+    label.btn.btn-month {
+        width: 155px;
+    }
+}
